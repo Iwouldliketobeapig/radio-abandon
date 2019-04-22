@@ -1,6 +1,6 @@
 {
   "name": "radio-abandon",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,19 +16,9 @@
     "typescript": "^3.4.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.3.3",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-loader": "^8.0.5",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^2.1.1",
     "gulp": "^4.0.1",
     "gulp-less": "^4.0.1",
     "gulp-typescript": "^5.0.1",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "style-loader": "^0.23.1"
+    "less": "^3.9.0"
   }
 }

@@ -15,11 +15,29 @@ npm i --S radio-abandon
 ## 使用
 
 ```javascript
+import React, { PureComponent } from 'react';
 import { RadioAbandon } from 'radio-abandon';
 
 const options = [
   { lable: '选项一', value: 1 },
   { lable: '选项二', value: 1 },
 ];
-<RadioAbandon options={options} />
+
+class BasicComponent extends PureComponent {
+  render () {
+    return (
+      <RadioAbandon options={options} />
+    )
+  }
+}
 ```
+
+### Options
+
+| 属性 | 说明 | 类型 | 默认值 |
+| :--- | :--- | :--- | :--- |
+| disabled | 整组失效 | boolean | false |
+| name | CheckboxGroup 下所有 input[type="checkbox"] 的 name 属性 | string | - |
+| options | 指定可选项 | string[] | [] |
+| value | 指定选中的选项 | any | - |
+| onChange | 变化时回调函数 | Function(checkedValue) | - |

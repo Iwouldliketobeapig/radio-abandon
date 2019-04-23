@@ -1,12 +1,17 @@
 {
   "name": "radio-abandon",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "index.js",
   "scripts": {
     "default": "gulp default",
     "less": "gulp less"
   },
+  "keywords": [
+    "ant-desgin",
+    "radio abandon",
+    "radio checkbox"
+  ],
   "author": "dutao",
   "license": "ISC",
   "dependencies": {

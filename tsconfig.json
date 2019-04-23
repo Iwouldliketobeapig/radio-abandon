@@ -1,7 +1,4 @@
 {
-  "files": [
-    "./radioAbandon/*.tsx"
-  ],
   "compilerOptions": {
     "module": "esnext",
     "target": "es5",
@@ -10,7 +7,6 @@
       "dom"
     ],
     "sourceMap": false,
-    "allowJs": true,
     "jsx": "react",
     "moduleResolution": "node",
     "baseUrl": ".",
@@ -24,7 +20,8 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "noImplicitUseStrict": true,
-    "alwaysStrict": false
+    "alwaysStrict": false,
+    "declaration": true,
   },
   "exclude": [
     "node_modules",

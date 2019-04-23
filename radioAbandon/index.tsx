@@ -7,7 +7,7 @@ import { RadioAbandonProps } from './interface'
 const CheckboxGroup = Checkbox.Group;
 
 export default class RadioAbandon extends PureComponent<RadioAbandonProps, any> {
-  constructor (props: any) {
+  constructor (props: RadioAbandonProps) {
     super(props);
     this.state = {
       value: '',
@@ -20,9 +20,19 @@ export default class RadioAbandon extends PureComponent<RadioAbandonProps, any> 
     });
   }
 
+  // shouldComponentUpdate (nextProps: RadioAbandonProps, nextState) {
+  //   if (this.props.value !== nextProps.value) {
+  //     return true;
+  //   }
+  //   return false;
+  // }
+
   render () {
     const {onChange, value, className, ...props} = this.props;
-    const valueOwn = [this.props.value];
+    let valueOwn = [this.props.value];
+    if (!valueOwn[0]) {
+      valueOwn = [this.state.value]
+    }
     return (
       <div className='antd-radio-abandon'>
         <CheckboxGroup 

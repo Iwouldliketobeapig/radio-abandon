@@ -1,8 +1,8 @@
 {
   "name": "radio-abandon",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "default": "gulp default",
     "less": "gulp less"
@@ -16,12 +16,14 @@
   "license": "ISC",
   "dependencies": {
     "antd": "^3.16.3",
+    "merge2": "^1.2.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "typescript": "^3.4.4"
   },
   "devDependencies": {
     "gulp": "^4.0.1",
+    "@types/react": "16.8.10",
     "gulp-less": "^4.0.1",
     "gulp-typescript": "^5.0.1",
     "less": "^3.9.0"

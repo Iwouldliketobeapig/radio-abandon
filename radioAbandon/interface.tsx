@@ -6,4 +6,5 @@ export interface RadioAbandonProps {
   className?: string;
   disabled?: boolean;
   name?: string;
+  options?: any[];
 }

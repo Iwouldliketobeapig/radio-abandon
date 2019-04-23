@@ -1,4 +1,4 @@
-# <center>单选可取消组件</center>
+# <center>ant-desgin单选可取消组件</center>
 
 [![NPM version](https://img.shields.io/npm/v/radio-abandon.svg)](https://www.npmjs.org/package/radio-abandon)
 [![NPM Downloads](https://img.shields.io/npm/dm/radio-abandon.svg)](https://www.npmjs.org/package/radio-abandon)

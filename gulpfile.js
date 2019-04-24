@@ -1,8 +1,12 @@
-var gulp = require('gulp');
-var ts = require('gulp-typescript');
-var tsProject = ts.createProject('tsconfig.json');
-var less = require('gulp-less');
-var merge = require('merge2');
+let gulp = require('gulp');
+let ts = require('gulp-typescript');
+let tsProject = ts.createProject('tsconfig.json');
+const less = require('gulp-less');
+const merge = require('merge2');
+const rename = require("gulp-rename");
+const LessAutoprefix = require('less-plugin-autoprefix');
+const autoprefix = new LessAutoprefix({ browsers: ['last 2 versions'] });
+
 
 // gulp.task('default', function () {
 //   return gulp.src('./radioAbandon/*.tsx')
@@ -56,5 +60,8 @@ gulp.task('index', function () {
 
 gulp.task('less', function () {
     return gulp.src('./radioAbandon/*.less')
+        .pipe(less({
+            plugins: [autoprefix]
+        }))
         .pipe(gulp.dest('lib/radioAbandon'))
 })
